@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="tdl.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-bar">
+        <i class="fa-solid fa-square-check"></i>
+        <h2>TO-DO List</h2>
+        <span class="date">13 Sep 2025</span>
+      </div>
+      <div class="input">
+        <form>
+          <input type="text" placeholder="Enter your task." />
+          <button class="add-btn" type="submit">+</button>
+        </form>
+      </div>
+      <div class="filter-buttons">
+        <button>All</button>
+        <button>Active</button>
+        <button>Completed</button>
+      </div>
+      <div class="tasks">
+        <ul></ul>
+      </div>
+      <div class="bottom">
+        <p>1 task listed</p>
+        <button>delete tasks</button>
+      </div>
+    </div>
+    <script src="tdl.js"></script>
+  </body>
+</html>

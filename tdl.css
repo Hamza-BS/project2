@@ -1,0 +1,172 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #bbdefb;
+}
+.container {
+  background-color: #fff1d0;
+  padding: 1rem;
+  border-radius: 2rem;
+  min-height: 45vh;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+form {
+  margin: 1rem 0 0.5rem 0;
+}
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #008080;
+  color: aliceblue;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  gap: 15px;
+}
+
+.title-bar i {
+  font-size: 40px;
+  color: aliceblue;
+}
+
+.title-bar h2 {
+  margin: 0;
+  font-size: 20px;
+  flex-grow: 1;
+}
+
+.title-bar .date {
+  font-size: 14px;
+  color: #e0e0e0;
+}
+form {
+  display: flex;
+  gap: 10px;
+}
+
+form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  font-size: 35px;
+  border-radius: 8px;
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-buttons {
+  height: 35px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  gap: 1rem;
+}
+.filter-buttons button {
+  border: 1px solid white;
+  background-color: white;
+  color: chocolate;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  flex: 1;
+}
+.filter-buttons button:hover {
+  background-color: chocolate;
+  color: white;
+  border-color: chocolate;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.05);
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.filter-buttons button.active {
+  background-color: chocolate;
+  color: white;
+  border-color: chocolate;
+  border-radius: 10px;
+}
+.tasks {
+  background-color: white;
+  margin-top: 0.5rem;
+  padding: 10px;
+  row-gap: 10px;
+  border-radius: 10px;
+  height: 220px;
+  overflow-y: auto;
+}
+
+.tasks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tasks li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tasks li input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.tasks li label {
+  font-size: 20px;
+  margin-left: 8px;
+}
+.bottom {
+  background-color: white;
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 8px;
+  height: 35px;
+  align-items: center;
+  padding-left: 8px;
+}
+.bottom button {
+  width: 100px;
+  height: 35px;
+  padding: 0 8px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: chocolate;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.bottom button:hover {
+  background-color: chocolate;
+  color: white;
+  transform: scale(1.05);
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
